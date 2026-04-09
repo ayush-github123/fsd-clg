@@ -1,0 +1,12 @@
+const express = require('express');
+const app = express();
+const port = 8080;
+
+//Define a route for GET requests to the root URl
+app.get('/', (req, res) => {
+    res.send('Hello world from Express!');
+});
+
+app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`);
+});
